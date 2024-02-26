@@ -20,7 +20,7 @@ HTML, CSS, JavaScript
 
 ## API Documentation
 
-- Refer to [API Documentation](api-docs/README.md) for details on available endpoints and their usage.
+- Refer to [API Documentation]([api-docs/README.md](https://fakestoreapi.com/docs)) for details on available endpoints and their usage.
 
 ## Usage
 
