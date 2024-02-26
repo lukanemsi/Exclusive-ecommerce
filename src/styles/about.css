@@ -48,6 +48,9 @@
 .shopping-image{
     width: 650px;
 }
+.banner-section{
+    flex-wrap: nowrap;
+}
 @media only screen and (max-width: 765px) {
     .achivements-section, .employees-section{
         flex-direction: column;
@@ -71,6 +74,9 @@
     .employee img{
         width: 100%;
     }
+    .banner-section{
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -86,5 +92,7 @@
     .shopping-image{
         width: 450px;
     }
-
+    .banner-section{
+        flex-wrap: wrap;
+    }
 }

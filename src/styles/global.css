@@ -92,6 +92,392 @@ header{
     color: red;
 }
 
+
+:root{
+    --color-primary: #056CF2;
+    --color-heading: #0F051D;
+    --color-text: #7B7583;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.header{
+    max-width: 1500px;
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    background-color: #F9FBFf;
+    padding: 20px;
+    border-radius: 5px;
+    top: 0;
+
+}
+
+
+
+.navigation ul {
+   display: flex;
+   align-items: center;
+   gap: 80px;   
+   list-style: none;
+}
+.navigation ul > *:hover{
+    transform: scale(1.2);
+}
+
+.navigation a{
+    color: var(--color-heading);
+    text-decoration: none;
+}
+.navigation span{
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+.btn-main{
+    border: 3px solid var(--color-primary);
+    color: var(--color-primary);
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.banner-section{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("/src/img/background.png");
+    background-size: cover;
+    
+}
+.photo-wrapper{
+    display: flex;  
+    position: relative;
+    width: 60%;
+    height: 500px;
+}
+
+
+.orange-nft-wrapper img:first-child{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+.orange-nft-wrapper img:last-child{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+
+.blue-nft-wrapper img:first-child{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+.blue-nft-wrapper img:last-child{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#orange-star{
+ position: absolute;
+ bottom: 50px;
+ left: 100px;
+}
+
+#transient-circle{
+    position: absolute;
+    bottom: 0;
+}
+
+#blue-star{
+    position: absolute;
+    right: 100px;
+    top: 50px;
+}
+
+#gray-circle{
+    position: absolute;
+    right: 400px;
+}
+
+#pointy-star{
+    position: absolute;
+    top: 250px;
+    left: 350px;
+}
+
+.banner-section article{
+    margin-left: 100px;
+    color: var(--color-text); ;
+}
+
+
+
+.arrow-span::after{
+    content: " \2192";
+}
+
+h1{
+    color: var(--color-heading);
+    font-size: 60px;
+    margin: 12px 0px;
+}
+
+.btn-banner{
+    margin: 10px 0px;
+}
+
+
+.orange-nft-wrapper:hover{
+    animation: rolling 2s;
+}
+
+.blue-nft-wrapper:hover{
+    animation: fadeInOut 5s;
+}
+
+
+
+.img-attr:hover{
+    animation: bounceAndScale 3s;
+}
+
+.letter:hover{
+    font-weight: bolder;
+    color: pink;
+    font-size: larger;
+}
+
+.banner-section article, .book-wrapper {
+    animation: slideFromLeft 1.5s ease-in-out 0.5s forwards;
+}
+  
+.photo-wrapper, .book-about {
+    animation: slideFromRight 1.5s ease-in-out 0.5s forwards;
+}
+
+
+
+
+.avatar-text span{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--color-heading);
+}
+
+.avatar-wrapper{
+    display: flex;
+    gap: 130px;
+}
+
+.avatars{
+    position: relative;
+}
+
+.avatar{
+    position: absolute;
+}
+
+.avt-yel{
+    left: 0;
+}
+
+.avt-pn{
+    left: 30px;
+    z-index: 2;
+}
+
+.avt-bl{
+    left: 60px;
+    z-index: 3;
+}
+
+.brands-section{
+    text-align: center;
+    animation: scrollRightToLeft infinite linear 10s;
+    animation-delay: 4s;
+}
+.brands-section h2{
+    color: var(--color-heading);
+    font-size: 31px;
+    margin: 50px 0px 0px 0px;
+}
+.brands-wrapper{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nfts-section{
+    text-align: center;
+    color: var(--color-text);
+    padding-top: 5px;
+    padding-bottom: 100px;
+    background: linear-gradient(106.5deg, rgba(255, 215, 185, 0.91) 23%, rgba(223, 159, 247, 0.8) 93%);
+
+}
+.nfts-section h2{
+    margin-top: 100px;
+    color: var(--color-heading);
+}
+
+.nft-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.nft span{
+    font-weight: bold;
+    font-size: 31px;
+    color: var(--color-heading);
+}
+
+.nft {
+    animation: moveUpDown infinite linear 10s;
+    animation-timing-function: ease-out;
+}
+
+.nft:nth-child(2n){
+    animation-timing-function: ease-in;
+}
+
+.book-section{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    color: var(--color-text);
+}
+
+.book-section h2{
+    color: var(--color-heading);
+    font-size: 58px;
+    margin-bottom: 15px;
+}
+
+.book-section h2::after{
+    content: "";
+    display: block;
+    border-bottom: 3px solid rgba(38, 0, 252, 1);
+}
+
+.book-section button{
+    margin-top: 15px;
+    transition: transform 1s ease-in-out;
+}
+.book-section button:hover{
+    transform: rotate(360deg);
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    
+    }
+    50% {
+      transform: translateY(13%);
+    }
+  }
+
+@keyframes scrollRightToLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+}
+
+@keyframes rolling{
+    0% {
+        transform: rotate(0deg);
+      }
+    100% {
+        transform: rotate(360deg);
+      }
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0; 
+    }
+    50% {
+      opacity: 1; 
+    }
+}
+
+@keyframes bounceAndScale {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(30px) scale(1.2);
+    }
+}
+
+.slide-from-left{
+    opacity: 0;
+    animation: slideFromLeft 1s ease-in-out 0.2s forwards;
+}
+.slide-from-right{
+    opacity: 0;
+    animation: slideFromRight 1s ease-in-out 0.2s forwards;
+}
+.bounce:hover{
+    animation: bounceAndScale 3s;
+}
+
+@keyframes bounceAndScale {
+    0%, 100% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(30px) scale(1.05);
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+@keyframes slideFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
 @media only screen and (max-width: 765px) {
     .item{
         width: 70%;
