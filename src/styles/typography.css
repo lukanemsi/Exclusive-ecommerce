@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.bolder{
+    font-weight: bolder;
+}
+
+.decoration-none{
+    text-decoration: none;
+}
+
+.text-line-through{
+    text-decoration: line-through;
+}
+
+.fs-25{
+    font-size: 25px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 46px;
+}
+@media only screen and (max-width: 765px) {
+    h1{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 765px) and (max-width: 1024px) {
+    h1{
+        font-size: 35px;
+    }
+}

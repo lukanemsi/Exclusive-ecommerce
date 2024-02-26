@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <title>Exclusive</title>
+  </head>
+  <body class="container">
+    <section
+      class="hero-section m-side-40 mt-50 flex align-center justify-between gap-20"
+    >
+      <div class="flex-column gap-20">
+        <h1>
+          Welcome to Exclusive Your <br />
+          One-Stop Shop for Quality Products
+        </h1>
+        <p class="banner-text">
+          Discover the latest trends and unbeatable deals at Exclusive. <br />
+          We bring you a curated collection of high-quality products <br />
+          designed to elevate your lifestyle. Shop with Confidence At <br />
+          Exclusive, we prioritize quality and customer satisfaction. <br />
+          Our handpicked selection of products spans across various categories,
+          <br />
+          ensuring you find exactly what you need. From fashion to electronics,
+          <br />
+          home essentials to beauty products - we've got you covered.
+        </p>
+      </div>
+      <div>
+        <img
+          src="./src/img/hero.jpg"
+          alt="online shopping"
+          class="hero-image"
+        />
+      </div>
+    </section>
+
+    <section class="m-side-40 sales-section mt-50">
+      <div class="sales-header">
+        <p class="section-flag">Today's</p>
+        <div class="flex align-center justify-between">
+          <div class="flex align-center gap-40">
+            <h2 class="section-subheader">Flash Sales</h2>
+            <p id="timer"></p>
+          </div>
+          <div>
+            <img
+              id="left-arrow"
+              src="./src/img/icons/left-arrow.svg"
+              alt="left arrow"
+            />
+            <img
+              id="right-arrow"
+              src="./src/img/icons/right-arrow.svg"
+              alt="right arrow"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="sales-items" class="m-side-40 flex gap-20"></div>
+    </section>
+
+    <section class="m-side-40 mt-50">
+      <p class="section-flag">This Month</p>
+      <div class="mt-20">
+        <h2 class="section-subheader">Best Selling Products</h2>
+      </div>
+      <div id="best-selling-items" class="m-side-40 flex gap-20 mt-20"></div>
+    </section>
+
+    <script type="module" src="./src/scripts/index.js"></script>
+  </body>
+</html>

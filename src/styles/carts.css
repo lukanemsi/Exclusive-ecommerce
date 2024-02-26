@@ -1,0 +1,36 @@
+@import "./global.css";
+
+.item-image{
+    width: 36px;
+    height: 50px;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px 5px 5px 10px;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+    border-spacing: 20px;
+    border-top: 2px dotted lightgray;
+}
+tr,th{
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+td,th{
+    padding: 20px;
+}
+
+tbody{
+    text-align: center;
+}
+tfoot{
+    text-align: left;
+}
+
+.btn-wrapper{
+    margin-left: auto;
+}

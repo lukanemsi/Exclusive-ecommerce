@@ -1,0 +1,136 @@
+@import "./typography.css";
+@import "./layout.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* GLOBAL ITEM */
+.item{
+    width: 30%;
+    border: 2px solid lightgray;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.item:hover {
+    transform: scale(1.03);
+}
+.sale-icon{
+    left: 0;
+    width: 60px;
+    background-color: var(--color-secondary);
+}
+
+.data-image{
+    width: 50%;
+}
+
+.wishlist-icon{
+    right: 2%;
+    cursor: pointer;
+}
+.cart-icon{
+    right: 2%;
+    top: 32px;
+    cursor: pointer;
+}
+.btn{
+    cursor: pointer;
+}
+/* Global Header */
+header{
+    border-bottom: 2px solid black;
+}
+.page-link{
+    cursor: pointer;
+}
+.page-link:hover::after{
+    content: "";
+    display: block;
+    border-bottom: 1.2px solid black;
+}
+
+.filter-input, .email-input{
+    position: relative;
+}
+.filter-input img, .email-input img{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    right: 0;
+    cursor: pointer;
+}
+.filter-input input{
+    padding: 10px;
+}
+
+.copyright-footer{
+    border-top: 1px solid gray;
+}
+
+.social-net-icon{
+    cursor: pointer;
+}
+
+.page-link{
+    font-size: 20px;
+}
+.section-flag{
+    font-size: 32px;
+}
+#wishlist-page-wrapper, #cart-page-wrapper{
+    position: relative;
+}
+
+.item-counter{
+    position: absolute;
+    color: red;
+}
+
+@media only screen and (max-width: 765px) {
+    .item{
+        width: 70%;
+    }
+    .mobile-none{
+        display: none;
+    }
+    .burger-icon {
+        display: block;
+        cursor: pointer;
+        color: black;
+    }
+
+    .whishlist-icon{
+        position: static;
+    }
+
+    .page-link{
+        font-size: 14px;
+    }
+
+    .section-flag{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 765px) and (max-width: 1024px) {
+    .item{
+        width: 45%;
+    }
+    .tablet-none{
+        display: none;
+    }
+
+    .page-link{
+        font-size: 16px;
+    }
+
+    .section-flag{
+        font-size: 26px;
+    }
+}

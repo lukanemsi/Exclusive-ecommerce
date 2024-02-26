@@ -1,0 +1,56 @@
+@import "./global.css";
+
+
+.description-text{
+    border-bottom: 1px solid black;
+    padding-bottom: 20px;
+}
+#details-section > div{
+    width: 40%;
+}
+.item-image{
+    width: 100%;
+}
+
+#button-counter{
+    border: 1px solid black;
+}
+
+#button-counter{
+    padding: 8px 30px;
+}
+#btn-decrement, #btn-increment{
+    font-weight: 700;
+    padding: 8px 10px;
+}
+#buy-now{
+    padding: 12px 30px;
+    background-color: var(--color-secondary);
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+#btn-decrement:hover, #btn-increment:hover{
+    background-color: var(--color-secondary);
+    color: white;
+
+}
+
+.section-flag{
+    font-weight: 900;
+    color: var(--color-secondary);
+}
+.section-flag::before{
+    content: "";
+    margin-right: 5px;
+    border-left: 10px solid var(--color-secondary);
+    border-radius: 3px;
+}
+
+
+@media only screen and (max-width: 765px) {
+    #details-section{
+        align-items: center;
+        flex-direction: column;
+    }
+}

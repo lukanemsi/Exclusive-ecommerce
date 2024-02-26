@@ -1,0 +1,90 @@
+@import "./global.css";
+
+.achivement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid black;
+    padding: 50px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+}
+.achivement-number{
+    font-size: 32px;
+    font-weight: 900;
+}
+.achivement:hover{
+    color: white;
+    background-color: var(--color-secondary);
+}
+.employee{
+    text-align: center;
+}
+
+.emploee-name{
+    font-size: 32px;
+    font-weight: 600;
+}
+.emploee-position{
+    font-size: 23px;
+}
+
+.provide-header{
+    font-size: 20px;
+    font-weight: 800;
+}
+.provide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-text{
+    font-size: 25px;
+}
+.shopping-image{
+    width: 650px;
+}
+@media only screen and (max-width: 765px) {
+    .achivements-section, .employees-section{
+        flex-direction: column;
+    }
+    .main-text{
+        font-size: 16px;
+    }
+    .achivement{
+        width: 50%;
+    }
+
+    .shopping-image{
+        width: 100%;
+    }
+    .employees-section{
+        justify-content: center;
+    }
+    .employee{
+        width: 70%;
+    }
+    .employee img{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 765px) and (max-width: 1024px) {
+    
+    .achivement{
+        width: 20%;
+    }
+    .main-text{
+        font-size: 19px;
+    }
+
+    .shopping-image{
+        width: 450px;
+    }
+
+}

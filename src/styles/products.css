@@ -1,0 +1,5 @@
+@import "./global.css";
+
+#category-select, #category-sorting{
+    padding: 15px;
+}

@@ -1,0 +1,66 @@
+@import "./global.css";
+
+
+.section-flag{
+    font-weight: 900;
+    color: var(--color-secondary);
+}
+.section-flag::before{
+    content: "";
+    margin-right: 5px;
+    border-left: 10px solid var(--color-secondary);
+    border-radius: 3px;
+}
+.hero-image{
+    width: 700px;
+}
+.hero-section{
+    flex-wrap: nowrap;
+}
+.banner-text{
+    font-size: 25px;
+}
+
+.section-subheader, #timer{
+    font-size: 28px;
+}
+@media only screen and (max-width: 800px) {
+    .hero-section{
+        justify-content: center;
+    }
+    .hero-image{
+        width: 100%;
+    }
+    #best-selling-items, #sales-items{
+        justify-content: center;
+    }
+    .banner-text{
+        font-size: 16px;
+    }
+
+    .section-subheader,  #timer{
+        font-size: 18px;
+    }
+    .hero-section{
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+    .hero-section{
+        justify-content: center;
+    }
+    .hero-image{
+        width: 450px;
+    }
+    .banner-text{
+        font-size: 19px;
+    }
+
+    .section-subheader, #timer{
+        font-size: 24px;
+    }
+    .hero-section{
+        flex-wrap: wrap;
+    }
+}
